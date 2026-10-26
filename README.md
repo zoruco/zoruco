@@ -1,6 +1,6 @@
 <picture>
   <source media="(prefers-color-scheme: light)" srcset="./assets/zoru-header-light.svg">
-  <img src="./assets/zoru-header-dark.svg" alt="ZORU — Small panda. Big dreams. Proof of Work on Vexanium." width="960">
+  <img src="./assets/zoru-header-dark.svg" alt="ZORU — Small panda. Big dreams. Proof of Work on Vexanium." width="100%">
 </picture>
 
 <p align="center">
