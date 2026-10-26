@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="292" viewBox="0 0 1280 292" role="img" aria-labelledby="title desc">
+<title id="title">ZORU — Small panda. Big dreams.</title>
+<desc id="desc">Proof of Work on Vexanium. ZORU's official project profile.</desc>
+<defs><clipPath id="card"><rect x="1" y="1" width="1278" height="290" rx="22"/></clipPath><linearGradient id="glow" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ffb45e"/><stop offset="1" stop-color="#ed6a1f"/></linearGradient></defs>
+<rect x="1" y="1" width="1278" height="290" rx="22" fill="#0d1117" stroke="#2b3541"/>
+<g clip-path="url(#card)"><circle cx="1140" cy="148" r="233" fill="#131a22"/><g fill="none" stroke="#2b3541" stroke-width="1"><circle cx="1140" cy="148" r="184"/><circle cx="1140" cy="148" r="139"/><path d="M900 148H1280M1140 0V292"/></g></g>
+<rect x="56" y="45" width="6" height="14" rx="2" fill="#ff8d3f"/>
+<text x="78" y="57" fill="#a4afbb" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="600" letter-spacing="3">PROOF OF WORK ON VEXANIUM</text>
+<text x="53" y="169" fill="#f5f7fa" font-family="Arial,Helvetica,sans-serif" font-size="110" font-weight="800" letter-spacing="-4">ZORU</text>
+<text x="58" y="222" fill="#a4afbb" font-family="Arial,Helvetica,sans-serif" font-size="25">Small panda. Big dreams.</text>
+<path d="M982 87H1159L1040 212H1160" fill="none" stroke="url(#glow)" stroke-width="24" stroke-linejoin="miter"/>
+<path d="M58 255H218" stroke="#ff8d3f" stroke-width="3"/>
+<text x="1240" y="261" text-anchor="end" fill="#a4afbb" font-family="monospace" font-size="12" letter-spacing="2">CHAIN 6736</text>
+</svg>
