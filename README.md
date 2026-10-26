@@ -29,6 +29,10 @@ The supply and halving rules are fixed in the token. The mining contracts can be
 | **[ZORU Miner](https://github.com/zoruco/zoru-miner)** | Desktop app and Rust CLI, wallet setup, mining instructions and software updates. |
 | **[ZORU PoW](https://github.com/zoruco/zoru-pow)** | Contracts, emission rules, proof verification and local tests. |
 
+### Contribute
+
+Bug reports, fixes, documentation and testing are welcome. Start with the contributing guide for [ZORU Miner](https://github.com/zoruco/zoru-miner/blob/main/CONTRIBUTING.md) or [ZORU PoW](https://github.com/zoruco/zoru-pow/blob/main/CONTRIBUTING.md).
+
 VEX pays transaction fees. Mining rewards are not guaranteed. The [mining guide](https://github.com/zoruco/zoru-miner/blob/main/docs/MINING.md) explains the fee allowance and what each mining state means.
 
 <p align="center">
