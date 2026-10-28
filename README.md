@@ -1,45 +1,56 @@
 <picture>
   <source media="(prefers-color-scheme: light)" srcset="./assets/zoru-header-light.svg">
-  <img src="./assets/zoru-header-dark.svg" alt="ZORU — Small panda. Big dreams. Proof of Work on Vexanium." width="100%">
+  <img src="./assets/zoru-header-dark.svg" alt="ZORU — Proof of Work on Vexanium." width="100%">
 </picture>
 
 <p align="center">
-  <a href="https://github.com/zoruco/zoru-miner/releases/latest"><strong>Download the miner</strong></a> &nbsp; · &nbsp;
-  <a href="https://github.com/zoruco/zoru-miner/blob/main/docs/MINING.md">Start mining</a> &nbsp; · &nbsp;
-  <a href="https://github.com/zoruco/zoru-pow/blob/main/docs/PROTOCOL.md">Read the rules</a> &nbsp; · &nbsp;
-  <a href="https://vexascan.com/evm/address/0x1aDA50813949E9aC4631EC8383321C1D6E793aA6">View on Vexascan</a>
+  <a href="https://github.com/zoruco/zoru-miner/releases/latest"><strong>Download ZORU Miner</strong></a> &nbsp; · &nbsp;
+  <a href="https://github.com/zoruco/zoru-pow/blob/main/docs/PROTOCOL.md">Protocol</a> &nbsp; · &nbsp;
+  <a href="https://github.com/zoruco/zoru-pow/blob/main/docs/MAINNET.md">Mainnet deployment</a>
 </p>
 
-ZORU is a Proof-of-Work token on Vexanium. You mine with your CPU; accepted work earns ZORU. Our red panda is a reminder to stay curious, put in the work and enjoy earning your own way.
+ZORU is a CPU-mined Keccak proof-of-work token on **Vexanium EVM mainnet (chain ID 6736)**. Miners submit proofs to the Ledger, and accepted work shares the rewards of each nonempty mining epoch.
 
-### The rules, at a glance
+| Token | Lifetime supply cap | Mining epoch | Network |
+| :--- | :--- | :--- | :--- |
+| ZORU · 8 decimals | **21,000,000 ZORU** | **60 seconds** | **VEX EVM · 6736** |
 
-| Supply ceiling | Mining | Network |
-| :--- | :--- | :--- |
-| **42,000,000 ZORU** | **CPU · Keccak-256** | **Vexanium EVM · 6736** |
+ZORU starts with zero minted supply and no premine. The initial emission is **5 ZORU per nonempty epoch**, halving every **2,100,000 nonempty epochs**. The on-chain launch time is **29 October 2026 at 15:13:01 UTC (22:13:01 WIB)**.
 
-ZORU started with zero supply and no premine. The initial reward is **100 ZORU**, halving after every **210,000 paid proofs**. Reward payments are at least **600 seconds** apart. A reserved proof is counted as paid only after its reward is minted and final confirmation is verified.
+### Mainnet contracts
 
-The supply and halving rules are fixed in the token. The mining contracts can be upgraded by the owner while mining and minting are paused. [Read the protocol and its assumptions.](https://github.com/zoruco/zoru-pow/blob/main/docs/SECURITY.md)
-
-### Build, mine, inspect
-
-| Project | What you'll find |
+| Contract | Address |
 | :--- | :--- |
-| **[ZORU Miner](https://github.com/zoruco/zoru-miner)** | Desktop app and Rust CLI, wallet setup, mining instructions and software updates. |
-| **[ZORU PoW](https://github.com/zoruco/zoru-pow)** | Contracts, emission rules, proof verification and local tests. |
+| Token | `0xb972753d17C5131D127B6c22DDE79B91a3132D03` |
+| Ledger | `0xFf53a9079C2853C39C5adBfca788cb0f12aCFF03` |
+| Engine | `0x9eD52C07691Cd26758ed1Ebe05d86698a9e54e8C` |
+| Beacon | `0x562249B5c3922fAfa31f350EfDb89E4F3F9a82fE` |
+
+The Token's supply cap is immutable, while the owner may change the issuer and upgrade mining modules. See [security considerations](https://github.com/zoruco/zoru-pow/blob/main/docs/SECURITY.md).
+
+### Get ZORU Miner
+
+**[Releases — Linux and Windows](https://github.com/zoruco/zoru-miner/releases)**
+
+The Rust CLI supports mining and reward accounting. The Qt desktop app provides wallet, mining and rewards controls. Check the listed platforms and SHA-256 checksums for each release before installing.
+
+| Repository | Contents |
+| :--- | :--- |
+| **[zoru-miner](https://github.com/zoruco/zoru-miner)** | Rust CLI, Qt GUI, wallet and reward tools |
+| **[zoru-pow](https://github.com/zoruco/zoru-pow)** | Solidity contracts, proof rules, deployment and tests |
+
+VEX is required for network transaction fees. A valid proof does not guarantee profit or immediate rewards.
 
 ### Contribute
 
-Bug reports, fixes, documentation and testing are welcome. Start with the contributing guide for [ZORU Miner](https://github.com/zoruco/zoru-miner/blob/main/CONTRIBUTING.md) or [ZORU PoW](https://github.com/zoruco/zoru-pow/blob/main/CONTRIBUTING.md).
-
-VEX pays transaction fees. Mining rewards are not guaranteed. The [mining guide](https://github.com/zoruco/zoru-miner/blob/main/docs/MINING.md) explains the fee allowance and what each mining state means.
+Issues, documentation improvements and code contributions are welcome. See [Miner contributing](https://github.com/zoruco/zoru-miner/blob/main/CONTRIBUTING.md) and [PoW contributing](https://github.com/zoruco/zoru-pow/blob/main/CONTRIBUTING.md).
 
 <p align="center">
-  <img src="./assets/241127.png" alt="ZORU's red panda, wearing its Z hoodie in an autumn forest." width="640">
-  <br>
-  <strong>Stay curious. Keep digging.</strong>
-  <br><br>
+  <img src="./assets/241127.png" alt="ZORU red panda" width="560">
+</p>
+
+<p align="center">
+  <strong>Small panda. Big dreams.</strong><br>
   <a href="mailto:zorucore@gmail.com">zorucore@gmail.com</a> &nbsp; · &nbsp;
   <a href="https://github.com/zoruco/zoru-miner/releases">Releases</a> &nbsp; · &nbsp;
   <a href="https://github.com/zoruco/zoru-miner/issues">Report an issue</a>
