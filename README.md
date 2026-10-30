@@ -32,7 +32,7 @@ The Token's supply cap is immutable, while the owner may change the issuer and u
 
 **[Releases — Linux and Windows](https://github.com/zoruco/zoru-miner/releases)**
 
-The Rust CLI supports mining and reward accounting. The Qt desktop app provides wallet, mining and rewards controls. Check the listed platforms and SHA-256 checksums for each release before installing.
+The Rust CLI supports mining and reward accounting. The Qt desktop app provides wallet, mining and rewards controls. Check the listed platforms and verify each download against `SHA256SUMS.txt` attached to the same release before installing.
 
 | Repository | Contents |
 | :--- | :--- |
